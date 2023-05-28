@@ -1,0 +1,32 @@
+.searchBox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.searchText {
+  width: 0;
+  height: 2px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  transition: all 0.2s linear;
+}
+.searchText:focus {
+  outline: none;
+}
+.searchBtn {
+  width: 2rem;
+  height: 2rem;
+  // background-color: #fff;
+  position: absolute;
+  display: grid;
+  place-items: center;
+  right: 1px;
+  border-radius: 50px;
+}
+.searchBox:hover > .searchText {
+  width: 12rem;
+  padding: 3px;
+}
