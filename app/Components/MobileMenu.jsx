@@ -56,18 +56,3 @@ export default function MobileMenu() {
         </>
     )
 }
-
-
-{
-    {
-        {
-            {
-                {
-                    {
-                        "deepak thakur"
-                    }
-                }
-            }
-        }
-    }
-}
