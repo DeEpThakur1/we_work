@@ -2,11 +2,6 @@
 // @import "./searcBar.scss";
 @import "./mobileMenu.scss";
 
-// img,
-// picture,
-// svg {
-//   max-width: 100%;
-// }
 
 *,
 *::before,
@@ -26,10 +21,7 @@ ul[role="list"],
 ol[role="list"] {
   list-style: none;
 }
-// li {
-//   align-items: center;
-//   justify-content: center;
-// }
+
 ul,
 li {
   list-style: none;
@@ -83,7 +75,7 @@ svg {
   margin: 0 2rem 0 2rem;
 }
 
-/*                            <-- Header --->                                      */
+/*                          <-- Header --->                                      */
 .searchBox {
   display: inline-block;
 }
@@ -125,7 +117,7 @@ svg {
     display: none;
   }
 }
-/*                        <--- Main --->                             */
+/*                   <--- Main --->                             */
 
 .main__section {
   &--heading--container {
@@ -177,7 +169,7 @@ svg {
       font-size: $hadding-font;
       font-weight: $f-bold;
       color: $btn-colors;
-      // margin-bottom: 24px;
+    
     }
 
     &--progress {
@@ -197,7 +189,6 @@ svg {
     }
   }
   &--progress-bar {
-    // margin-top: -16px;
     margin-right: 0.5rem;
     display: flex;
     gap: 1.56px;
@@ -482,8 +473,6 @@ svg {
       grid-column: 1/-1;
     }
     &--pdf-logo-container {
-      // display: grid;
-      // place-content: center;
     }
     &--pdf-and-download-icons {
       width: 298px;
@@ -506,9 +495,6 @@ svg {
     margin: 0 auto;
     padding: 0 34px;
   }
-  // .header__nav--mobile-menu {
-  //   display: none;
-  // }
 
   .main__section {
     &--heading {
