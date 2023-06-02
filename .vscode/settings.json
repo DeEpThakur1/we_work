@@ -1,3 +1,9 @@
 {
-  "cSpell.enableFiletypes": ["!git-commit"]
+  "cSpell.enableFiletypes": [
+    "!git-commit"
+  ],
+  "cSpell.words": [
+    "deepak",
+    "thakur"
+  ]
 }

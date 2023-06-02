@@ -6,9 +6,9 @@ import MobileMenu from "./MobileMenu";
 export const Header = () => {
   return (
     <>
-      <header>
+      <header className="header__nav">
 
-        <ul>
+        <ul className="header__nav--logo">
           <li>
             <Link href="/">
               <Image
@@ -22,8 +22,8 @@ export const Header = () => {
             </Link>
           </li>
 
-          <li className="arrow">
-            <Image className="arrow"
+          <li className="header__nav--logo--arrow">
+            <Image
               src="/arrow.svg"
               alt="arrow"
               width={24}
@@ -32,30 +32,40 @@ export const Header = () => {
             />
           </li>
         </ul>
+
         <MobileMenu />
+        <ul className="header__nav--icons">
 
-        <ul className="navRight">
+          < li>
 
-          <li className="searchBox">
-            <input type="text" className="searchText">
-            </input>
-            <Link href="#" className="searchBtn">
-              <Image className="searchIcon"
-                src="/search.svg"
-                alt="search bar"
-                width={23.5}
-                height={23.5}
-              />
-            </Link>
-          </li>
-          <li className="navIcon">
+            <div className="searchBox ">
+
+
+
+
+
+              <Link href="#" className="searchBtn" >
+                <Image
+                  src="/search.svg"
+                  alt="search bar"
+                  width={23.5}
+                  height={23.5}
+                  className="header__nav--icons--search searchIcon"
+                />
+
+
+              </Link>
+            </div>
+
+
+
             <Link href="#">
               <Image
                 src="/mail.svg"
                 alt="galary"
                 width={30}
                 height={30}
-                className="mail"
+                className="header__nav--icons--mail "
               />
             </Link>
 
@@ -65,7 +75,7 @@ export const Header = () => {
                 alt="notification"
                 width={33}
                 height={32}
-                className="notification"
+                className="header__nav--icons--notification "
               />
             </Link>
 
@@ -74,7 +84,7 @@ export const Header = () => {
                 alt="question"
                 width={30}
                 height={30}
-                className="question"
+                className="header__nav--icons--question "
               />
             </Link>
 
@@ -83,7 +93,7 @@ export const Header = () => {
                 alt="profile"
                 width={45}
                 height={45}
-                className="profile"
+                className="header__nav--icons--profile "
               />
             </Link>
 
@@ -91,7 +101,7 @@ export const Header = () => {
         </ul>
 
       </header>
-      <div className="hrLine"></div>
+      <div className="header__nav--hr-line"></div>
     </>
   )
 };
