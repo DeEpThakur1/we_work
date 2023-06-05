@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import React from 'react'
 
 
 
@@ -64,6 +63,8 @@ export const Main = () => {
             <div className="main__section--progress-bar">
 
                 <span className='main__section--progress-bar--first-dot'></span>
+                <div className="main__section--progress-bar--dot"></div>
+                <div className="main__section--progress-bar--dot"></div>
                 <div className="main__section--progress-bar--dot"></div>
                 <div className="main__section--progress-bar--dot"></div>
                 <div className="main__section--progress-bar--dot"></div>

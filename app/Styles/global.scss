@@ -2,11 +2,7 @@
 // @import "./searcBar.scss";
 @import "./mobileMenu.scss";
 
-// img,
-// picture,
-// svg {
-//   max-width: 100%;
-// }
+
 
 *,
 *::before,
@@ -26,6 +22,7 @@ ul[role="list"],
 ol[role="list"] {
   list-style: none;
 }
+
 // li {
 //   align-items: center;
 //   justify-content: center;
@@ -43,6 +40,7 @@ html:focus-within {
 html {
   color-scheme: light dark;
 }
+
 /* Set core body defaults */
 
 body {
@@ -79,6 +77,7 @@ svg {
     scroll-behavior: auto !important;
   }
 }
+
 .container {
   margin: 0 2rem 0 2rem;
 }
@@ -87,6 +86,7 @@ svg {
 .searchBox {
   display: inline-block;
 }
+
 .header__nav {
   height: 4.8125rem;
   display: flex;
@@ -100,10 +100,12 @@ svg {
       margin-top: 0.4rem;
     }
   }
+
   &--icons {
     &--search {
       margin: 28.44px 0 26.06px 0px;
     }
+
     &--mail {
       margin: 28.75px 0 25.75px 33.81px;
     }
@@ -111,20 +113,25 @@ svg {
     &--notification {
       margin: 28.75px 0 25.75px 35.75px;
     }
+
     &--question {
       margin: 27.5px 0 24.5px 35.25px;
     }
+
     &--profile {
       margin: 18px 0 14px 29.5px;
     }
   }
+
   &--hr-line {
     border: 1px solid #e9ebeb;
   }
+
   &--mobile-menu {
     display: none;
   }
 }
+
 /*                        <--- Main --->                             */
 
 .main__section {
@@ -157,6 +164,7 @@ svg {
     height: 191px;
     object-fit: contain;
   }
+
   &--work {
     margin: -3em 0 0 3em;
     width: 15.375em;
@@ -189,13 +197,13 @@ svg {
       }
 
       &--heading-number {
-        font-size: 20.26px;
         color: $base-color;
         font-weight: $f-bold;
         margin-left: 10.86px;
       }
     }
   }
+
   &--progress-bar {
     // margin-top: -16px;
     margin-right: 0.5rem;
@@ -210,6 +218,7 @@ svg {
       background: #00b686;
       border-radius: 78.1553px 0px 0px 78.1553px;
     }
+
     &--dot {
       width: 7.82px;
       height: 6.25px;
@@ -218,20 +227,22 @@ svg {
     }
 
     &--last-dot {
-            width: 7.82px;
-       height: 6.25px;
+      width: 7.82px;
+      height: 6.25px;
       background: #d3d7d7;
       display: inline-block;
-       border-radius: 0px 78.1553px 78.1553px 0px;
+      border-radius: 0px 78.1553px 78.1553px 0px;
     }
   }
 }
+
 /*                              <--- Footer start --->                                    */
 .footer__btn--container {
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
 }
+
 .btn {
   height: 43px;
   color: $btn-colors;
@@ -243,6 +254,7 @@ svg {
     color: $base-color;
   }
 }
+
 .footer__btn {
   display: flex;
   gap: 7px;
@@ -253,27 +265,32 @@ svg {
     background-color: $w-color;
     //
   }
+
   &--file {
     width: 60px;
     border: $border;
     background-color: $w-color;
   }
+
   &--contact {
     width: 89px;
     border: $border;
     background-color: $w-color;
   }
+
   &--m-action {
     width: 165px;
     border: $border;
     background-color: $w-color;
   }
+
   &--i-action {
     width: 155px;
     border: $border;
     background-color: $w-color;
   }
 }
+
 .footer__section {
   margin-top: 2.3125rem;
   display: grid;
@@ -293,12 +310,14 @@ svg {
       color: $btn-colors;
       padding-left: 10px;
     }
+
     &--title {
       font-size: 14px;
       font-weight: $f-regular;
       margin: 0.8438rem;
       color: $list-colors;
     }
+
     &--hr-line {
       border: 1px solid #e9ebeb;
       margin: 0 10px;
@@ -336,10 +355,12 @@ svg {
     display: flex;
     justify-content: center;
   }
+
   &--pdf-logo-container {
     display: grid;
     justify-items: center;
   }
+
   &--pdf-and-download-icons {
     width: 287px;
     height: 38px;
@@ -351,12 +372,14 @@ svg {
     border: 0.0625rem solid $border-clr;
 
     border-radius: 5px;
+
     &--num {
       font-size: $xsmall;
       font-weight: $f-regular;
       color: #233735;
     }
   }
+
   &--logo {
     width: 420px;
     height: 160.39px;
@@ -374,21 +397,25 @@ svg {
     grid-column: 2/3;
   }
 }
-@media (5rem <= width < 600px) {
+
+@media (5rem <=width < 600px) {
   .container {
     max-width: 598px;
     margin: 0 auto;
     padding: 10px;
   }
+
   .header__nav--icons {
     display: none;
   }
+
   .main__section {
     &--heading {
       font-size: 18px;
       font-weight: 800;
       margin-top: 14px;
     }
+
     &--btn {
       font-size: 14px;
       height: 32px;
@@ -401,9 +428,12 @@ svg {
       height: 82px;
       background: url("/mobile-bg-hero.svg") no-repeat;
     }
+
     &--work {
       width: 116px;
       height: 47.63px;
+      margin: -1.7rem 0 14.03px 1rem;
+
       &--img {
         width: 30%;
         margin: 0 -15px;
@@ -418,31 +448,62 @@ svg {
 
       &--progress {
         margin-right: 10px;
+
         &--heading {
           font-size: 10px;
           margin-right: 10px;
         }
+
         &--heading-number {
           font-size: 14px;
           font-weight: $f-bold;
         }
       }
     }
+
+    &--progress-bar {
+      margin-right: 0.5rem;
+      gap: 1.56px;
+
+      &--first-dot {
+        width: 6.76px;
+        height: 5.09px;
+        border-radius: 78.1553px 0px 0px 78.1553px;
+      }
+
+      &--dot {
+        width: 6.76px;
+        height: 5.09px;
+
+      }
+
+      &--last-dot {
+        width: 6.76px;
+        height: 5.09px;
+      }
+    }
+
   }
+
   .footer__btn--container {
     gap: 5px;
   }
+
   .footer__btn {
     height: 29px;
+
     &--bI {
       width: 77px;
     }
+
     &--file {
       width: 45px;
     }
+
     &--contact {
       width: 65px;
     }
+
     &--m-action {
       width: 138px;
     }
@@ -451,6 +512,7 @@ svg {
       display: none;
     }
   }
+
   .footer__section {
     display: grid;
     grid-template-columns: 1fr;
@@ -465,11 +527,13 @@ svg {
       grid-column: 1/-1;
       display: flex;
       justify-content: space-between;
+
       &--title {
         font-size: $hadding-font;
         font-weight: $f-semi-bold;
         color: $btn-colors;
       }
+
       &--icons {
         display: none;
       }
@@ -478,19 +542,28 @@ svg {
     &--bg-img {
       background: url("/footer-bg-mobi.svg") no-repeat;
       width: 100%;
+      height: 238px;
 
       grid-column: 1/-1;
     }
-    &--pdf-logo-container {
-      // display: grid;
-      // place-content: center;
-    }
+
     &--pdf-and-download-icons {
-      width: 298px;
+      width: 294px;
       height: 38.98px;
+
       &--num {
         font-size: $xsmall;
         font-weight: $f-regular;
+      }
+    }
+
+    &--logo {
+      width: 280.19px;
+      height: 107px;
+
+      &--title {
+        font-size: 13.79px;
+        font-weight: 700;
       }
     }
 
@@ -506,6 +579,7 @@ svg {
     margin: 0 auto;
     padding: 0 34px;
   }
+
   // .header__nav--mobile-menu {
   //   display: none;
   // }
@@ -526,6 +600,7 @@ svg {
     &--work {
       width: 170.5px;
       height: 70px;
+
       &--img {
         width: 30%;
         margin: 0 -15px;
@@ -533,14 +608,20 @@ svg {
     }
 
     &--container2 {
+
+
       &--heading {
         font-size: 20px;
         font-weight: 700;
+
       }
+
       &--progress {
         &--heading {
           font-size: 14px;
           font-weight: 400;
+          margin-right: 13px;
+
         }
 
         &--heading-number {
@@ -555,16 +636,20 @@ svg {
     gap: 4px;
     font-size: 16px;
   }
+
   .footer__btn {
     &--bI {
       width: 100px;
     }
+
     &--file {
       width: 61px;
     }
+
     &--contact {
       width: 91px;
     }
+
     &--m-action {
       width: 166px;
     }
@@ -584,10 +669,12 @@ svg {
 
     &--top {
       grid-column: 1/-1;
+
       &--title {
         font-size: 20px;
       }
     }
+
     &--icons {
       // left: 2rem;
     }
@@ -603,11 +690,8 @@ svg {
       grid-column: 1/-1;
     }
   }
-}
 
-.hidden {
-  display: none;
-}
-.flex {
-  display: flex;
+  .vector {
+    margin: 0 10px
+  }
 }

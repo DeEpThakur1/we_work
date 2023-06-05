@@ -99,7 +99,8 @@ export const Footer = () => {
                         </div>
 
 
-                        <div className='footer__section--logo'><img src="/wework-logo-1 2.svg" alt="" />
+                        <div className='footer__section--logo'>
+                            <img src="/wework-logo-1 2.svg" alt="" />
                             <div className='footer__section--logo--title'>For all the ways you work, we&apos;re here</div></div>
                     </div>
 
@@ -111,7 +112,7 @@ export const Footer = () => {
                 <div className='footer__section--share-and-message-icon'>
                     <img src="/msg.svg" alt="" />
 
-                    <img src="/vector.svg" alt="" />
+                    <img className='vector' src="/vector.svg" alt="" />
 
                     <img src="/share.svg" alt="" />
                 </div>
